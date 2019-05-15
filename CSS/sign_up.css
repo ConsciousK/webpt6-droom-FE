@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Reem Kufi Regular'), local('ReemKufi-Regular'), url(https://fonts.gstatic.com/s/reemkufi/v6/2sDcZGJLip7W2J7v7wQzaGW8.ttf) format('truetype');
+}
+.header-container {
+  width: 1440px;
+}
+.header-container .site-title {
+  font-family: 'Reem Kufi';
+}
