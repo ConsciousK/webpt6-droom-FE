@@ -2,14 +2,56 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import './reset.less';
 
-.navcontainer {
+.maincontainer {
+	margin: auto;
+	max-width: 1440px;}
+
+.headercontainer {
 	display: flex;
-	max-width: 1440px;
+	width: 1259px;
+	justify-content: space-between;
+	margin: 0 auto;
+
 	.header {
 		display: flex;
-		font-family: 'ReemKufi';
+		justify-content: flex-start;
+		font-family: 'Reem Kufi';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		line-height: 72px;
+		color: grey;
 	}
-	.navlink {
 
+	.navcontainer{
+		display: flex;
+		justify-content: space-between;
+		width: 572px;
+		align-items: center;
+
+		.navlink {
+		box-sizing: border-box;
+		display: flex;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: 0.15px;
+		align-items: center;
+		height: 44px;
+		color: rgba(19, 20, 24, 0.87);
+		text-decoration: none;
+		border:3px solid rgba(0,0,0,0);
+		border-radius: 20px;
+		padding: 0 10px;
+
+			&:hover {
+				border: 3px solid #6891F9;
+				box-sizing: border-box;
+				border-radius: 20px;
+
+			}
+		}
 	}
 }
