@@ -3,54 +3,126 @@
 @import './reset.less';
 
 .maincontainer {
-	margin: auto;
-	max-width: 1440px;}
-
-.headercontainer {
 	display: flex;
-	width: 1259px;
-	justify-content: space-between;
-	margin: 0 auto;
+	margin: auto;
+	max-width: 1440px;
 
-	.header {
+	.backgroundvector {
 		display: flex;
-		justify-content: flex-start;
-		font-family: 'Reem Kufi';
-		font-style: normal;
-		font-weight: normal;
-		font-size: 48px;
-		line-height: 72px;
-		color: grey;
+		position: inherit;
+		left: 95px;
+		top: 0px;
+		z-index: -2;
+	}
+		
+	.loginillustration {
+		display: flex;
+		position: absolute;
+		z-index: -1;
+		align-self: center;
 	}
 
-	.navcontainer{
+	.logincontainer {
 		display: flex;
+		border:1px solid red;
+		height: 552px;
+		width: 539px;
+		flex-wrap: wrap;
+		position: inherit;
+		margin-top: 222px;
+		margin-left:70px;
+		align-content: space-around;
+
+		h2 {
+			display: flex;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 60px;
+			line-height: 70px;
+			letter-spacing: -0.5px;
+			color: rgba(19, 20, 24, 0.87);
+			border:1px solid red;
+			height: 60px;
+			margin: 0 auto;
+		}
+		.linkedinlogin {
+			display: flex;
+			height: 70px;
+			border:1px solid red;
+			margin: 0 auto;
+		}
+		.ordivider {
+			display: flex;
+			border:1px solid red;
+			margin: 0 auto;
+		}
+		.email {
+			display: flex;
+			border:1px solid red;
+			margin: 0 auto;
+			width: 368px;
+			height: 75px;
+		}
+		.password {
+			display: flex;
+			border:1px solid red;
+			margin: 0 auto;
+			width: 368px;
+			height: 75px;
+		}
+	}
+
+	.headercontainer {
+		display: flex;
+		width: 1259px;
 		justify-content: space-between;
-		width: 572px;
-		align-items: center;
+		z-index: 0;
+		position: absolute;
+		padding-top: 30px;
+		height: 72px;
+		margin-left: 50px;
 
-		.navlink {
-		box-sizing: border-box;
-		display: flex;
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 23px;
-		letter-spacing: 0.15px;
-		align-items: center;
-		height: 44px;
-		color: rgba(19, 20, 24, 0.87);
-		text-decoration: none;
-		border:3px solid rgba(0,0,0,0);
-		border-radius: 20px;
-		padding: 0 10px;
+		.header {
+			display: flex;
+			justify-content: flex-start;
+			font-family: 'Reem Kufi';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 48px;
+			line-height: 72px;
+			color: whitesmoke;
+		}
 
-			&:hover {
-				border: 3px solid #6891F9;
-				box-sizing: border-box;
-				border-radius: 20px;
+		.navcontainer {
+			display: flex;
+			justify-content: space-between;
+			width: 572px;
+			align-items: center;
 
+			.navlink {
+			box-sizing: border-box;
+			display: flex;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+			letter-spacing: 0.15px;
+			align-items: center;
+			height: 44px;
+			color: rgba(19, 20, 24, 0.87);
+			text-decoration: none;
+			border:3px solid rgba(0,0,0,0);
+			border-radius: 20px;
+			padding: 0 10px;
+
+				&:hover {
+					border: 3px solid #6891F9;
+					box-sizing: border-box;
+					border-radius: 20px;
+
+				}
 			}
 		}
 	}
