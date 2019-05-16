@@ -160,13 +160,75 @@ html {
 .container .main-container {
   margin: 25px 80px;
 }
-.container .main-container h2 {
+.container .main-container .fPageTitle {
   color: #fff;
   font-size: 3.5em;
   font-weight: 300;
+  line-height: 1.2em;
+  padding-top: 5px;
 }
-.container .main-container p {
+.container .main-container .fPageDescription {
   color: #fff;
   font-size: 2em;
   font-weight: 300;
+  line-height: 1.2em;
+  padding-top: 5px;
+}
+.container .main-container .tabs-container {
+  background-color: rgba(252, 252, 254, 0.54);
+  border-radius: 8px;
+  padding: 30px 80px;
+  margin: 40px 0;
+}
+.container .main-container .tabs-container .tabs {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.container .main-container .tabs-container .tabs .tab {
+  color: rgba(57, 60, 70, 0.38);
+  font-size: 1.6em;
+  border-bottom: solid 1px rgba(57, 60, 70, 0.38);
+  padding: 15px;
+}
+.container .main-container .tabs-container .tabs .active-tab {
+  color: rgba(19, 20, 24, 0.87);
+  border-bottom-color: rgba(19, 20, 24, 0.87);
+  border-bottom-width: 5px;
+}
+.container .main-container .tabs-container .tab-sections {
+  margin-top: 40px;
+}
+.container .main-container .tabs-container .tab-sections .tab-data {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow {
+  width: 700px;
+  display: flex;
+  flex-flow: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input {
+  background-color: #fff;
+  padding: 15px 10px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 1em;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox {
+  width: 302px;
+  height: 302px;
+  background-color: #ECEFF7;
+  border: 1px dashed #9EB9FB;
+  border-radius: 10px;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox input[type="file"] {
+  color: transparent;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox #upload-form-img {
+  text-align: center;
 }
