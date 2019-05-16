@@ -135,16 +135,52 @@ table {
   border-spacing: 0;
 }
 .maincontainer {
+  display: flex;
   margin: auto;
   max-width: 1440px;
 }
-.headercontainer {
+.maincontainer .backgroundvector {
+  display: flex;
+  position: inherit;
+  left: 95px;
+  top: 0px;
+  z-index: -2;
+}
+.maincontainer .loginillustration {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  align-self: center;
+}
+.maincontainer .logincontainer {
+  display: flex;
+  border: 1px solid red;
+  height: 552px;
+}
+.maincontainer .logincontainer h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -0.5px;
+  color: rgba(19, 20, 24, 0.87);
+}
+.maincontainer .logincontainer .linkedinlogin {
+  display: flex;
+  height: 70px;
+}
+.maincontainer .headercontainer {
   display: flex;
   width: 1259px;
   justify-content: space-between;
-  margin: 0 auto;
+  z-index: 0;
+  position: absolute;
+  padding-top: 30px;
+  height: 72px;
+  margin-left: 50px;
 }
-.headercontainer .header {
+.maincontainer .headercontainer .header {
   display: flex;
   justify-content: flex-start;
   font-family: 'Reem Kufi';
@@ -152,15 +188,15 @@ table {
   font-weight: normal;
   font-size: 48px;
   line-height: 72px;
-  color: grey;
+  color: whitesmoke;
 }
-.headercontainer .navcontainer {
+.maincontainer .headercontainer .navcontainer {
   display: flex;
   justify-content: space-between;
   width: 572px;
   align-items: center;
 }
-.headercontainer .navcontainer .navlink {
+.maincontainer .headercontainer .navcontainer .navlink {
   box-sizing: border-box;
   display: flex;
   font-family: 'Roboto';
@@ -177,7 +213,7 @@ table {
   border-radius: 20px;
   padding: 0 10px;
 }
-.headercontainer .navcontainer .navlink:hover {
+.maincontainer .headercontainer .navcontainer .navlink:hover {
   border: 3px solid #6891F9;
   box-sizing: border-box;
   border-radius: 20px;
