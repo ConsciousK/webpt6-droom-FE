@@ -213,31 +213,65 @@ html {
   padding: 10px 0;
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input {
-  background-color: #fff;
+  background-color: #ECEFF7;
   width: 100%;
   padding: 15px 10px;
   border: 1px solid lightgrey;
   border-bottom-width: 2px;
   font-size: 1em;
 }
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input:focus {
+  background-color: #fff;
+}
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow .formSpacer {
   width: 50px;
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .profile-img-drop {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   width: 302px;
   height: 302px;
   background-color: #ECEFF7;
   border: 1px dashed #9EB9FB;
   border-radius: 10px;
 }
-.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox input[type="file"] {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .profile-img-drop .uploadBoxText {
+  font-family: 'Roboto';
+  padding: 20px 0;
+  color: rgba(38, 40, 47, 0.6);
 }
-.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox #upload-form-img {
-  text-align: center;
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .profile-img-drop #upload-form-img {
+  width: 67px;
+  height: 47px;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .upload-btn-wrapper .btn {
+  margin-top: 20px;
+  border: 1px solid #395088;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #FCFCFE;
+  background-color: #395088;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .upload-btn-wrapper input[type='file'] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
