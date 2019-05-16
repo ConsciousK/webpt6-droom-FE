@@ -96,9 +96,18 @@ html {
                             border-radius: 10px;
 
                             input[type="file"] {
-                                color: transparent;
+                                width: 0.1px;
+                                height: 0.1px;
+                                opacity: 0;
+                                overflow: hidden;
+                                position: absolute;
+                                z-index: -1;
+                                // color: transparent;
                                 // visibility: hidden;
+
+                            // https://blog.benestudio.co/custom-file-upload-button-with-pure-css-5aacf39aa0a
                             }
+
                             #upload-form-img {
                                 text-align: center;
                             }
