@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import './reset.less';
-@import './sign_up';
+// @import './sign_up';
 // @import './login';
 
 * {
@@ -14,15 +15,40 @@ html, body {
 
 body {
   font-family: 'Roboto';
+  max-width: 1440px;
+  margin: auto;
 }
 
-.maincontainer {
+.no-click-img {
+	-webkit-user-select: none;     
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.topContainer {
 	display: flex;
-	margin: auto;
-	max-width: 1440px;
+
+	.landingBlob {
+		display: flex;
+		position: inherit;
+		left: 95px;
+		top: 0px;
+		z-index: -2;
+	}
+		
+	.landingTopIllustration {
+		display: flex;
+		position: relative;
+		z-index: -1;
+		align-self: center;
+		right: 45px;
+		top: 30px;
 	}
 
-	.headercontainer {
+
+	.headerContainer {
 		display: flex;
 		width: 1259px;
 		justify-content: space-between;
@@ -46,7 +72,7 @@ body {
 		.navcontainer {
 			display: flex;
 			justify-content: space-between;
-			width: 572px;
+			width: 520px;
 			align-items: center;
 
 			.navlink {
@@ -72,6 +98,31 @@ body {
 					border-radius: 20px;
 
 				}
+			}
+		}
+	}
+	.topLeft {
+		
+		.mainContainer {
+			position: absolute;
+			top: 200px;
+			margin-left: 50px;
+			width: 500px;
+
+			h2 {
+				font-weight: 300;
+				font-size: 60px;
+				line-height: 70px;
+				letter-spacing: -0.5px;
+				color: #FCFCFE;
+			}
+
+			h3 {
+				font-size: 30px;
+				line-height: 40px;
+				letter-spacing: 0.25px;
+				color: #FCFCFE;
+				margin: 25px 0;
 			}
 		}
 	}
