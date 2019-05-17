@@ -139,6 +139,12 @@ table {
   margin: auto;
   max-width: 1440px;
 }
+@media (max-width: 500px) {
+  .maincontainer {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
 .maincontainer .backgroundvector {
   display: flex;
   position: inherit;
@@ -146,11 +152,21 @@ table {
   top: 0px;
   z-index: -2;
 }
+@media (max-width: 500px) {
+  .maincontainer .backgroundvector {
+    display: none;
+  }
+}
 .maincontainer .loginillustration {
   display: flex;
   position: absolute;
   z-index: -1;
   align-self: center;
+}
+@media (max-width: 500px) {
+  .maincontainer .loginillustration {
+    display: none;
+  }
 }
 .maincontainer .logincontainer {
   display: flex;
@@ -161,6 +177,13 @@ table {
   margin-top: 222px;
   margin-left: 70px;
   align-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .maincontainer .logincontainer {
+    width: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
 }
 .maincontainer .logincontainer h2 {
   display: flex;
@@ -177,7 +200,7 @@ table {
 .maincontainer .logincontainer .linkedinlogin {
   display: flex;
   height: 70px;
-  margin: 15px 0;
+  margin: 0 auto;
 }
 .maincontainer .logincontainer .ordivider {
   display: flex;
@@ -265,6 +288,14 @@ table {
   height: 72px;
   margin-left: 50px;
 }
+@media (max-width: 500px) {
+  .maincontainer .headercontainer {
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 .maincontainer .headercontainer .header {
   display: flex;
   justify-content: flex-start;
@@ -275,11 +306,29 @@ table {
   line-height: 72px;
   color: whitesmoke;
 }
+@media (max-width: 500px) {
+  .maincontainer .headercontainer .header {
+    justify-content: center;
+    font-size: 32px;
+    line-height: 65px;
+    color: #6891F9;
+  }
+}
 .maincontainer .headercontainer .navcontainer {
   display: flex;
   justify-content: space-between;
   width: 572px;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .maincontainer .headercontainer .navcontainer {
+    width: 500px;
+    justify-content: space-evenly;
+    font-size: 32px;
+    line-height: 65px;
+    color: #6891F9;
+    margin: 0 auto;
+  }
 }
 .maincontainer .headercontainer .navcontainer .navlink {
   box-sizing: border-box;
@@ -297,6 +346,11 @@ table {
   border: 3px solid rgba(0, 0, 0, 0);
   border-radius: 20px;
   padding: 0 10px;
+}
+@media (max-width: 500px) {
+  .maincontainer .headercontainer .navcontainer .navlink {
+    font-size: 12px;
+  }
 }
 .maincontainer .headercontainer .navcontainer .navlink:hover {
   border: 3px solid #6891F9;
