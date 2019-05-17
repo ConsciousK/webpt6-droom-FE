@@ -24,14 +24,14 @@
 
 	.logincontainer {
 		display: flex;
-		border:1px solid red;
-		height: 552px;
+		flex-direction: column;
+//		height: 552px;
 		width: 539px;
 		flex-wrap: wrap;
 		position: inherit;
 		margin-top: 222px;
 		margin-left:70px;
-		align-content: space-around;
+		align-content: space-evenly;
 
 		h2 {
 			display: flex;
@@ -42,34 +42,97 @@
 			line-height: 70px;
 			letter-spacing: -0.5px;
 			color: rgba(19, 20, 24, 0.87);
-			border:1px solid red;
 			height: 60px;
-			margin: 0 auto;
+			margin: 10px 0;
 		}
+
 		.linkedinlogin {
 			display: flex;
 			height: 70px;
-			border:1px solid red;
-			margin: 0 auto;
+			margin: 15px 0;
 		}
+
 		.ordivider {
 			display: flex;
-			border:1px solid red;
-			margin: 0 auto;
+			margin: 15px 0;
 		}
+
 		.email {
 			display: flex;
-			border:1px solid red;
-			margin: 0 auto;
 			width: 368px;
-			height: 75px;
+			height: 55px;
+			background-color: lightgrey;
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.15px;
+			color: rgba(38, 40, 47, 0.6);
+			mix-blend-mode: normal;
+			margin: 15px 0 5px;
+			margin-left: 15px;
+			border-bottom: 1px solid grey;
 		}
+
 		.password {
 			display: flex;
-			border:1px solid red;
-			margin: 0 auto;
 			width: 368px;
-			height: 75px;
+			height: 55px;
+			background-color: lightgrey;
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.15px;
+			color: rgba(38, 40, 47, 0.6);
+			mix-blend-mode: normal;
+			margin: 10px 0 2px;
+			margin-left: 15px;
+			border-bottom: 1px solid grey;
+		}
+
+		.savepw {
+			display: flex;
+			width: 368px;
+			height: 18px;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
+			color: rgba(19, 20, 24, 0.87);
+			margin: 2px 0;
+			margin-left: 10px;
+		
+			.savepwdown{
+				padding-top: 3px;
+			}
+		}
+
+		.loginbutton {
+			width: 100px;
+			height: 35px;
+			color: white;
+			border-radius: 20px;;
+			font: inherit;
+			background-color: #6891F9;
+			cursor: pointer;
+			margin:	0 auto;
+			margin-top: 50px;
+		}
+
+		.signuplink {
+			margin: 0 auto;
+			margin-top: 5px;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			text-decoration-line: underline;
+			color: #4C6AB6
 		}
 	}
 
@@ -121,7 +184,6 @@
 					border: 3px solid #6891F9;
 					box-sizing: border-box;
 					border-radius: 20px;
-
 				}
 			}
 		}
