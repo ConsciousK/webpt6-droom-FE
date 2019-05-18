@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import './reset.less';
+@import './mixins.less';
 // @import './sign_up';
 // @import './login';
 
@@ -28,10 +29,10 @@ body {
 }
 
 .topContainer {
-	display: flex;
+	.flex(@dir: row);
 
 	.landingBlob {
-		display: flex;
+		.flex();
 		position: inherit;
 		left: 95px;
 		top: 0px;
@@ -39,7 +40,7 @@ body {
 	}
 		
 	.landingTopIllustration {
-		display: flex;
+		.flex();
 		position: relative;
 		z-index: -1;
 		align-self: center;
@@ -49,9 +50,8 @@ body {
 
 
 	.headerContainer {
-		display: flex;
+		.flex(space-between);
 		width: 1259px;
-		justify-content: space-between;
 		z-index: 0;
 		position: absolute;
 		padding-top: 30px;
@@ -59,8 +59,7 @@ body {
 		margin-left: 50px;
 
 		.header {
-			display: flex;
-			justify-content: flex-start;
+			.flex(flex-start);
 			font-family: 'Reem Kufi';
 			font-style: normal;
 			font-weight: normal;
@@ -70,21 +69,18 @@ body {
 		}
 
 		.navcontainer {
-			display: flex;
-			justify-content: space-between;
+			.flex(space-between, center);
 			width: 520px;
-			align-items: center;
 
 			.navlink {
 			box-sizing: border-box;
-			display: flex;
+			.flex(initial, center);
 			font-family: 'Roboto';
 			font-style: normal;
 			font-weight: 500;
 			font-size: 20px;
 			line-height: 23px;
 			letter-spacing: 0.15px;
-			align-items: center;
 			height: 44px;
 			color: rgba(19, 20, 24, 0.87);
 			text-decoration: none;
@@ -136,6 +132,9 @@ body {
 				text-decoration: none;
 				border-radius: 25px;
 				box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+				&:hover {
+					background-color: #FCD732;
+				}
 			}
 		}
 	}
@@ -164,10 +163,7 @@ body {
 		}
 		.features {
 			padding: 40px;
-			display: flex;
-			flex-flow: row;
-			align-items: flex-end;
-			justify-content: space-around;
+			.flex(space-around, flex-end);
 
 			.feature {
 				width: 260px; 
@@ -189,9 +185,7 @@ body {
 		}
 	}
 	.getStarted {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
+		.flex(initial, center, column);
 		padding: 20px 155px;
 
 		h2 {
@@ -216,6 +210,9 @@ body {
 			text-decoration: none;
 			border-radius: 25px;
 			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+			&:hover {
+				background-color: #FCD732;
+			}
 		}		
 	}
 	#howItWorksTitle {
@@ -226,10 +223,7 @@ body {
 		font-weight: 600;
 	}
 	.howItWorks {
-		display: flex;
-		flex-flow: row;
-		align-items: center;
-		justify-content: space-around;
+		.flex(space-around, center);
 		padding: 30px 50px;
 
 		.halfSection {
