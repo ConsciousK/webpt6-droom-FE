@@ -246,14 +246,35 @@ body {
   color: #FCFCFE;
   margin: 25px 0;
 }
+.topContainer .topLeft .mainContainer a.main-btn {
+  display: inline-block;
+  background-color: #E5C01B;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+}
 .contentContainer {
-  margin: 20px 50px;
+  padding: 20px 50px;
+}
+.contentContainer.blue {
+  background-color: #83A5FA;
+}
+.contentContainer.lightblue {
+  background-color: #E3EBFD;
 }
 .contentContainer .featuresContainer h2 {
   font-size: 38px;
   line-height: 45px;
   color: #000000;
   text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
 }
 .contentContainer .featuresContainer .features {
   padding: 40px;
@@ -263,16 +284,72 @@ body {
   justify-content: space-around;
 }
 .contentContainer .featuresContainer .features .feature {
-  width: 240px;
+  width: 260px;
 }
 .contentContainer .featuresContainer .features .feature h3 {
-  font-size: 20px;
-  line-height: 23px;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 2em;
   letter-spacing: 0.15px;
+  padding: 10px 0 15px;
 }
 .contentContainer .featuresContainer .features .feature p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.12em;
+  line-height: 1.35em;
   letter-spacing: 0.5px;
   color: rgba(38, 40, 47, 0.6);
+}
+.contentContainer .getStarted {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px 155px;
+}
+.contentContainer .getStarted h2 {
+  font-size: 3em;
+  line-height: 1.25em;
+  color: #FCFCFE;
+}
+.contentContainer .getStarted p {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  color: rgba(249, 250, 253, 0.7);
+}
+.contentContainer .getStarted a.main-btn {
+  display: inline-block;
+  background-color: #E5C01B;
+  padding: 15px 75px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+}
+.contentContainer #howItWorksTitle {
+  font-size: 2.4em;
+  line-height: 2.8em;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+}
+.contentContainer .howItWorks {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 50px;
+}
+.contentContainer .howItWorks .halfSection {
+  max-width: 500px;
+}
+.contentContainer .howItWorks .halfSection p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: rgba(38, 40, 47, 0.6);
+}
+.contentContainer .footerArea {
+  min-height: 40px;
 }
