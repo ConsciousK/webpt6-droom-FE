@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import './reset.less';
+@mobile: ~"(max-width: 500px)";
+
+.maincontainer {
+	display: flex;
+	margin: auto;
+	max-width: 1440px;
+
+	@media @mobile {
+		width: 500px;
+		margin:0 auto;
+	}
+
+	.matchesheader {
+		display: flex;
+		position: absolute;
+		width: 1147px;
+		height: 103px;
+		left: 296px;
+		top: 0px;
+		background: #6891F9;
+
+		.matchestitle {			
+			position: absolute;
+			width: 134px;
+			height: 40px;
+			margin-left: 25px;
+			top: 35px;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 34px;
+			line-height: 40px;
+			letter-spacing: 0.25px;
+			color: #FCFCFE;
+		}
+	}
+
+	.sidebar {
+		position: absolute;
+		width: 314px;
+		height: 1024px;
+		left: 0px;
+		top: 0px;
+		background: #6891F9;
+
+		.profilepicture {		
+			display: flex;				
+			position: absolute;
+			width: 127px;
+			height: 127px;
+			left: 101px;
+			top: 62px;
+		}
+
+		.username {
+			position: absolute;
+			width: 152px;
+			height: 29px;
+			left: 85px;
+			top: 215px;
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 28px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #FCFCFE;
+		}
+
+		.editprofile {
+			position: absolute;
+			width: 99px;
+			height: 31px;
+			left: 111px;
+			top: 259px;
+			border: 1px solid #FCFCFE;
+			box-sizing: border-box;
+			border-radius: 100px;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			display: flex;
+			align-items: center;
+			color: #FCFCFE;
+			padding-left: 15px;
+			&:hover {
+				border: 1px solid black;
+				color: black;
+			}
+		}
+
+		.suitcaseicon {
+			display: flex;
+			position: absolute;
+			width: 39px;
+			height: 34px;
+			left: 77px;
+			top: 331px;
+		}
+	}
+}
