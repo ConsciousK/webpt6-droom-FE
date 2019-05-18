@@ -246,3 +246,33 @@ body {
   color: #FCFCFE;
   margin: 25px 0;
 }
+.contentContainer {
+  margin: 20px 50px;
+}
+.contentContainer .featuresContainer h2 {
+  font-size: 38px;
+  line-height: 45px;
+  color: #000000;
+  text-align: center;
+}
+.contentContainer .featuresContainer .features {
+  padding: 40px;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.contentContainer .featuresContainer .features .feature {
+  width: 240px;
+}
+.contentContainer .featuresContainer .features .feature h3 {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+}
+.contentContainer .featuresContainer .features .feature p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: rgba(38, 40, 47, 0.6);
+}
