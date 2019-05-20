@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Reem Kufi Regular'), local('ReemKufi-Regular'), url(https://fonts.gstatic.com/s/reemkufi/v6/2sDcZGJLip7W2J7v7wQzaGW8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.maincontainer {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+}
+@media (max-width: 500px) {
+  .maincontainer {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+.maincontainer .matchesheader {
+  display: flex;
+  position: absolute;
+  width: 1147px;
+  height: 103px;
+  left: 296px;
+  top: 0px;
+  background: #6891F9;
+}
+.maincontainer .matchesheader .matchestitle {
+  position: absolute;
+  width: 134px;
+  height: 40px;
+  margin-left: 25px;
+  top: 35px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  color: #FCFCFE;
+}
+.maincontainer .sidebar {
+  position: absolute;
+  width: 314px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  background: #6891F9;
+}
+.maincontainer .sidebar .profilepicture {
+  display: flex;
+  position: absolute;
+  width: 127px;
+  height: 127px;
+  left: 101px;
+  top: 62px;
+}
+.maincontainer .sidebar .username {
+  position: absolute;
+  width: 152px;
+  height: 29px;
+  left: 85px;
+  top: 215px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FCFCFE;
+}
+.maincontainer .sidebar .editprofile {
+  position: absolute;
+  width: 99px;
+  height: 31px;
+  left: 111px;
+  top: 259px;
+  border: 1px solid #FCFCFE;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #FCFCFE;
+  padding-left: 15px;
+}
+.maincontainer .sidebar .editprofile:hover {
+  border: 1px solid black;
+  color: black;
+}
+.maincontainer .sidebar .suitcaseicon {
+  display: flex;
+  position: absolute;
+  width: 39px;
+  height: 34px;
+  left: 77px;
+  top: 331px;
+}
