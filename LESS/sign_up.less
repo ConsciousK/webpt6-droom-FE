@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import './reset';
-@mobile: ~"(max-width: 500px)";
+@import './mixins.less';
 
 html {
     background-color: #6891F9;
@@ -44,9 +44,7 @@ html {
             padding: 30px 80px;
             margin: 40px 0;
             .tabs {
-                display: flex;
-                flex-flow: row;
-                justify-content: center;
+                .flex(center);
     
                 .tab {
                     color: rgba(57, 60, 70, 0.38);
@@ -65,18 +63,14 @@ html {
                 margin-top: 40px;
 
                 .tab-data {
-                    display: flex;
-                    flex-flow: row;
-                    justify-content: space-between;
+                    .flex(space-between);
                     padding-top: 40px;
 
                     .formHalf {
 
                         .inputRow {
                             width: 700px;
-                            display: flex;
-                            flex-flow: row;
-                            justify-content: space-between;
+                            .flex(space-between);
                             padding: 10px 0;
 
                             input {
@@ -103,10 +97,7 @@ html {
                             display: inline-block;
 
                             .profile-img-drop {
-                                display: flex;
-                                flex-flow: column;
-                                justify-content: center;
-                                align-items: center;
+                                .flex(center, center, column);
                                 width: 302px;
                                 height: 302px;
                                 background-color: #ECEFF7;
@@ -128,8 +119,7 @@ html {
                             .upload-btn-wrapper {
                                 position: relative;
                                 overflow: hidden;
-                                display: flex;
-                                justify-content: center;
+                                .flex(center);
 
                                 .btn {
                                     margin-top: 20px;

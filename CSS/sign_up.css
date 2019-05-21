@@ -182,8 +182,9 @@ html {
 }
 .container .main-container .tabs-container .tabs {
   display: flex;
-  flex-flow: row;
   justify-content: center;
+  align-items: initial;
+  flex-direction: row;
 }
 .container .main-container .tabs-container .tabs .tab {
   color: rgba(57, 60, 70, 0.38);
@@ -201,15 +202,17 @@ html {
 }
 .container .main-container .tabs-container .tab-sections .tab-data {
   display: flex;
-  flex-flow: row;
   justify-content: space-between;
+  align-items: initial;
+  flex-direction: row;
   padding-top: 40px;
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow {
   width: 700px;
   display: flex;
-  flex-flow: row;
   justify-content: space-between;
+  align-items: initial;
+  flex-direction: row;
   padding: 10px 0;
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input {
@@ -233,9 +236,9 @@ html {
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .profile-img-drop {
   display: flex;
-  flex-flow: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 302px;
   height: 302px;
   background-color: #ECEFF7;
@@ -256,6 +259,8 @@ html {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: initial;
+  flex-direction: row;
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .uploadBox .upload-btn-wrapper .btn {
   margin-top: 20px;
