@@ -188,7 +188,7 @@ html {
   background-color: rgba(252, 252, 254, 0.54);
   border-radius: 8px;
   padding: 30px 80px;
-  margin: 40px 0;
+  margin: 40px 0 0;
 }
 @media (max-width: 500px) {
   .container .main-container .tabs-container {
@@ -346,4 +346,16 @@ html {
     align-items: center;
     flex-direction: column;
   }
+}
+.container .main-container #next-btn {
+  margin-top: 20px;
+  border: 1px solid #395088;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #FCFCFE;
+  background-color: #395088;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
 }
