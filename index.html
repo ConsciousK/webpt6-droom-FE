@@ -5,10 +5,12 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Droom - Login</title>
+  <title>Droom</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="CSS/index.css">
+
+  <script src="JS/index.js" async></script>
 
 </head>
 
@@ -16,41 +18,69 @@
   <div class="topContainer">
     <nav class="headerContainer">
         <h1 class="header">Droom</h1>
+        <div class="menu-button" id="open-mobile-menu" onclick="openMenu()">&#9776;</div>
         <div class="navcontainer">
+          <div class="menu-button" id="close-mobile-menu" onclick="closeMenu()">&#10005;</div>
           <a class="navlink" id="features" href="#">Features</a>
           <a class="navlink" id="howitworks" href="#">How It Works</a>
           <a class="navlink" id="login" href="Login.HTML">Login</a>
-          <a class="navlink" id="signup" href="#">Sign-Up</a>
+          <a class="navlink" id="signup" href="sign_up_user_info.html">Sign-Up</a>
         </div>
       </nav>
       <div class="topLeft">
-        <img src="assets/landingBlob.svg" class="landingBlob no-click-img" draggable="false" />
+        <img src="ASSETS/landingBlob.svg" class="landingBlob no-click-img" draggable="false" />
         <div class="mainContainer">
           <h2>Finding your dream job is our job.</h2>
-          <h3>Get matched with your dream job by connecting with potential employers and network with other working proefssionals.</h3>
+          <h3>Get matched with your dream job by connecting with potential employers and network with other working professionals.</h3>
+          <a href="#" class="main-btn">Join Now</a>
         </div>
       </div>
-        <img src="assets/landingTopIllustration.svg" class="landingTopIllustration no-click-img" draggable="false" />
+        <img src="ASSETS/landingTopIllustration.svg" class="landingTopIllustration no-click-img" draggable="false" />
     
   </div>
   <div class="contentContainer">
     <div class="featuresContainer">
       <h2>Features</h2>
-      <section class="feature">
-        <img src="ASSETS/landingFeatures1.svg" class="features-img" />
-        <h3>Find your ideal applicant</h3>
-        <p>Companies can sort through job-seekers that will be a great fit with your team.</p>
-      </section>
-      <section class="feature">
-        <img src="ASSETS/landingFeatures2.svg" class="features-img" />
-        <h3>Network with professionals</h3>
-        <p>Chat with potential employers to better your chances at landing the job.</p>
-      </section>
-      <section class="feature">
-        <img src="ASSETS/landingFeatures3.svg" class="features-img" />
-        <h3>Apply to jobs near you</h3>
-        <p>Find the best jobs near you to beat that early morning commute.</p>
-      </section>
+      <div class="features">
+        <div class="feature">
+          <img src="ASSETS/landingFeatures1.svg" class="features-img" />
+          <h3>Find your ideal applicant</h3>
+          <p>Companies can sort through job-seekers that will be a great fit with your team.</p>
+        </div>
+        <div class="feature">
+          <img src="ASSETS/landingFeatures2.svg" class="features-img" />
+          <h3>Network with professionals</h3>
+          <p>Chat with potential employers to better your chances at landing the job.</p>
+        </div>
+        <div class="feature">
+          <img src="ASSETS/landingFeatures3.svg" class="features-img" />
+          <h3>Apply to jobs near you</h3>
+          <p>Find the best jobs near you to beat that early morning commute.</p>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="contentContainer blue">
+    <div class="getStarted">
+      <h2>Get started by signing up for a personal or business account.</h2>
+      <p>With the personal accout, you’ll have access to many great companies near and potentially can get matched with your dream job. For the business, find an applicant that is most qualified for the role.</p>
+      <a href="#" class="main-btn">Get Started</a>
+    </div>
+  </div>
+  <div class="contentContainer lightblue">
+      <h2 id="howItWorksTitle">How does it work?</h2>
+      <div class="howItWorks">
+        <div class="halfSection hide-mobile">
+          <img src="ASSETS/how-it-works.svg" alt="How It Works Illustration">
+        </div>
+        <div class="halfSection">
+          <p>At Droom, we’ll help find the job that’s best for you. All you have to do is set up an account, go to your job-listings page and “like” the jobs that are best suited for you. Based on your profile,  a  company can determine whether or not you are a great fit with their company. If they believe you are, then you and that company will be matched.</p><br />
+          <p>From there, the empoyer can message you about possibly setting up an interview and proceeding to the hiring process.</p><br />
+          <p>We also work with companies to match them with the job-seeker that best match their ideal candidate.</p>
+        </div>
+      </div>
+  </div>
+  <div class="contentContainer blue">
+    <div class="footerArea"></div>
   </div>
 </body>
