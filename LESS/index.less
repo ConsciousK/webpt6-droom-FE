@@ -87,6 +87,8 @@ body {
 			padding-top: 0px;
 			height: auto;
 			.flex(@dir: column);
+			margin: 0;
+			padding-left: 30px;
 		}
 
 		.header {
@@ -99,6 +101,19 @@ body {
 			color: whitesmoke;
 		}
 
+		.menu-button {
+			display: none;
+
+			@media @mobile {
+				display: block;
+				position: absolute;
+				font-size: 1.8em;
+				padding: 5px;
+				right: 10px;
+				top: 10px;
+			}
+		}
+
 		.navcontainer {
 			.flex(space-between, center);
 			width: 520px;
@@ -109,20 +124,10 @@ body {
 				text-align: center;
 				position: fixed;
 				top: 0;
-				right: 0;
+				right: -250px;
 				background-color: #E3EBFD;
 				height: 100vh;
 				padding-top: 40px;
-			}
-
-			#menu-button {
-				@media @mobile {
-					position: absolute;
-					font-size: 1.8em;
-					padding: 5px;
-					left: 0;
-					top: 5px;
-				}
 			}
 
 			.navlink {

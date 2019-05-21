@@ -239,6 +239,8 @@ body {
     justify-content: initial;
     align-items: initial;
     flex-direction: column;
+    margin: 0;
+    padding-left: 30px;
   }
 }
 .topContainer .headerContainer .header {
@@ -252,6 +254,19 @@ body {
   font-size: 48px;
   line-height: 72px;
   color: whitesmoke;
+}
+.topContainer .headerContainer .menu-button {
+  display: none;
+}
+@media (max-width: 500px) {
+  .topContainer .headerContainer .menu-button {
+    display: block;
+    position: absolute;
+    font-size: 1.8em;
+    padding: 5px;
+    right: 10px;
+    top: 10px;
+  }
 }
 .topContainer .headerContainer .navcontainer {
   display: flex;
@@ -267,19 +282,10 @@ body {
     text-align: center;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -250px;
     background-color: #E3EBFD;
     height: 100vh;
     padding-top: 40px;
-  }
-}
-@media (max-width: 500px) {
-  .topContainer .headerContainer .navcontainer #menu-button {
-    position: absolute;
-    font-size: 1.8em;
-    padding: 5px;
-    left: 0;
-    top: 5px;
   }
 }
 .topContainer .headerContainer .navcontainer .navlink {
