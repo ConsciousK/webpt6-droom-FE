@@ -149,7 +149,12 @@ html {
   margin: 0 auto;
 }
 .container .header-container {
-  margin: 45px 80px 20px 80px;
+  margin: 45px 80px 20px;
+}
+@media (max-width: 500px) {
+  .container .header-container {
+    margin: 15px 35px;
+  }
 }
 .container .header-container .site-title {
   padding: 30px 0;
@@ -159,6 +164,11 @@ html {
 }
 .container .main-container {
   margin: 25px 80px;
+}
+@media (max-width: 500px) {
+  .container .main-container {
+    margin: 15px 35px;
+  }
 }
 .container .main-container .fPageTitle {
   color: #fff;
@@ -180,11 +190,24 @@ html {
   padding: 30px 80px;
   margin: 40px 0;
 }
+@media (max-width: 500px) {
+  .container .main-container .tabs-container {
+    padding: 20px;
+  }
+}
 .container .main-container .tabs-container .tabs {
   display: flex;
   justify-content: center;
   align-items: initial;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+  }
 }
 .container .main-container .tabs-container .tabs .tab {
   color: rgba(57, 60, 70, 0.38);
@@ -192,10 +215,22 @@ html {
   border-bottom: solid 1px rgba(57, 60, 70, 0.38);
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tabs .tab {
+    font-size: 1.4em;
+    border: solid 1px rgba(57, 60, 70, 0.38);
+  }
+}
 .container .main-container .tabs-container .tabs .active-tab {
   color: rgba(19, 20, 24, 0.87);
   border-bottom-color: rgba(19, 20, 24, 0.87);
   border-bottom-width: 5px;
+}
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tabs .active-tab {
+    background-color: rgba(57, 60, 70, 0.38);
+    border-width: 0px;
+  }
 }
 .container .main-container .tabs-container .tab-sections {
   margin-top: 40px;
@@ -207,6 +242,14 @@ html {
   flex-direction: row;
   padding-top: 40px;
 }
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tab-sections .tab-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-direction: column;
+  }
+}
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow {
   width: 700px;
   display: flex;
@@ -215,6 +258,16 @@ html {
   flex-direction: row;
   padding: 10px 0;
 }
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input {
   background-color: #ECEFF7;
   width: 100%;
@@ -222,6 +275,12 @@ html {
   border: 1px solid lightgrey;
   border-bottom-width: 2px;
   font-size: 1em;
+}
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input {
+    width: 90%;
+    margin: 10px 0;
+  }
 }
 .container .main-container .tabs-container .tab-sections .tab-data .formHalf .inputRow input:focus {
   background-color: #fff;
@@ -279,4 +338,12 @@ html {
   left: 0;
   top: 0;
   opacity: 0;
+}
+@media (max-width: 500px) {
+  .container .main-container .tabs-container .tab-sections .tab-data .formHalf.secondHalf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }

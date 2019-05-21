@@ -12,7 +12,11 @@ html {
     max-width: 1440px;
     margin: 0 auto;  
     .header-container {
-        margin: 45px 80px 20px 80px;
+        margin: 45px 80px 20px;
+
+        @media @mobile {
+            margin: 15px 35px;
+        }
         .site-title {
             padding: 30px 0;
             font-family: 'Reem Kufi';
@@ -23,6 +27,9 @@ html {
     .main-container {
         margin: 25px 80px;
 
+        @media @mobile {
+            margin: 15px 35px;
+        }
         .fPageTitle {
             color: #fff;
             font-size: 3.5em;
@@ -43,19 +50,37 @@ html {
             border-radius: 8px;
             padding: 30px 80px;
             margin: 40px 0;
+
+            @media @mobile {
+                padding: 20px;
+            }
             .tabs {
                 .flex(center);
+
+                @media @mobile {
+                    .flex(center, initial, column);
+                }
     
                 .tab {
                     color: rgba(57, 60, 70, 0.38);
                     font-size: 1.6em;
                     border-bottom: solid 1px rgba(57, 60, 70, 0.38);
                     padding: 15px;
+
+                    @media @mobile {
+                        font-size: 1.4em;
+                        border: solid 1px rgba(57, 60, 70, 0.38);
+                    }
                 }
                 .active-tab {
                     color: rgba(19, 20, 24, 0.87);
                     border-bottom-color: rgba(19, 20, 24, 0.87);
                     border-bottom-width: 5px;
+
+                    @media @mobile {
+                        background-color: rgba(57, 60, 70, 0.38);
+                        border-width: 0px;
+                    }
                 }
             }
 
@@ -66,12 +91,22 @@ html {
                     .flex(space-between);
                     padding-top: 40px;
 
+                    @media @mobile {
+                        .flex(space-between, initial, column);
+                    }
+
                     .formHalf {
 
                         .inputRow {
                             width: 700px;
                             .flex(space-between);
                             padding: 10px 0;
+
+                            @media @mobile {
+                                .flex(space-between, center, column);
+                                width: 100%;
+                                padding: 0;
+                            }
 
                             input {
                                 background-color: #ECEFF7;
@@ -80,6 +115,11 @@ html {
                                 border: 1px solid lightgrey;
                                 border-bottom-width: 2px;
                                 font-size: 1em;
+
+                                @media @mobile {
+                                    width: 90%;
+                                    margin: 10px 0;
+                                }
 
                                 &:focus {
                                     background-color: #fff;
@@ -139,6 +179,12 @@ html {
                                   top: 0;
                                   opacity: 0;
                                 }
+                            }
+                        }
+
+                        &.secondHalf {
+                            @media @mobile {
+                                .flex(center, center, column);
                             }
                         }
                     }
