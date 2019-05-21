@@ -136,8 +136,8 @@ table {
 }
 .maincontainer {
   display: flex;
-  margin: auto;
-  max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1452px;
 }
 @media (max-width: 500px) {
   .maincontainer {
@@ -148,9 +148,9 @@ table {
 .maincontainer .matchesheader {
   display: flex;
   position: absolute;
-  width: 1147px;
+  width: 1200px;
   height: 103px;
-  left: 296px;
+  left: 309px;
   top: 0px;
   background: #6891F9;
 }
@@ -167,6 +167,53 @@ table {
   line-height: 40px;
   letter-spacing: 0.25px;
   color: #FCFCFE;
+}
+.maincontainer .matchesheader .magnify {
+  display: flex;
+  position: absolute;
+  height: 36px;
+  left: 38%;
+  top: 35px;
+  background: #FFFFFF;
+  z-index: 1;
+  box-sizing: border-box;
+  border-top: 1px solid #4C6AB6;
+  border-left: 1px solid #4C6AB6;
+  border-bottom: 1px solid #4C6AB6;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 3px;
+}
+.maincontainer .matchesheader .searchbar {
+  display: flex;
+  position: absolute;
+  height: 36px;
+  width: 310px;
+  left: 41%;
+  top: 35px;
+  background: #FFFFFF;
+  border: 1px solid #4C6AB6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.maincontainer .matchesheader .bell {
+  display: flex;
+  position: absolute;
+  width: 37px;
+  height: 33px;
+  left: 900px;
+  top: 39px;
+}
+.maincontainer .matchesheader .cog {
+  display: flex;
+  position: absolute;
+  width: 35px;
+  height: 37px;
+  left: 960px;
+  top: 36px;
 }
 .maincontainer .sidebar {
   position: absolute;
@@ -207,6 +254,8 @@ table {
   left: 111px;
   top: 259px;
   border: 1px solid #FCFCFE;
+  color: white;
+  background: #6891F9;
   box-sizing: border-box;
   border-radius: 100px;
   font-family: 'Roboto';
@@ -216,7 +265,6 @@ table {
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #FCFCFE;
   padding-left: 15px;
 }
 .maincontainer .sidebar .editprofile:hover {
@@ -230,4 +278,140 @@ table {
   height: 34px;
   left: 77px;
   top: 331px;
+}
+.maincontainer .sidebar .usericon {
+  display: flex;
+  position: absolute;
+  width: 28px;
+  height: 32px;
+  left: 79px;
+  top: 393px;
+}
+.maincontainer .sidebar .hearticon {
+  display: flex;
+  position: absolute;
+  width: 32px;
+  height: 28px;
+  left: 77px;
+  top: 462px;
+}
+.maincontainer .sidebar .commenticon {
+  display: flex;
+  position: absolute;
+  width: 32px;
+  height: 28px;
+  left: 77px;
+  top: 523px;
+}
+.maincontainer .sidebar .powericon {
+  display: flex;
+  position: absolute;
+  width: 31.49px;
+  height: 32px;
+  left: 87px;
+  top: 944px;
+}
+.maincontainer .sidebar .sidebartxt1 {
+  display: flex;
+  position: absolute;
+  width: 112px;
+  height: 24px;
+  left: 139px;
+  top: 335px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #FCFCFE;
+}
+.maincontainer .sidebar .sidebartxt2 {
+  display: flex;
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  left: 135px;
+  top: 396px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 4px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #FCFCFE;
+}
+.maincontainer .sidebar .sidebartxt3 {
+  display: flex;
+  position: absolute;
+  width: 79px;
+  height: 24px;
+  left: 135px;
+  top: 463px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 4px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #F0DC82;
+}
+.maincontainer .sidebar .sidebartxt4 {
+  position: absolute;
+  width: 94px;
+  height: 24px;
+  left: 135px;
+  top: 524px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 4px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #FCFCFE;
+}
+.maincontainer .sidebar .logout {
+  position: absolute;
+  width: 64px;
+  height: 24px;
+  left: 153px;
+  top: 948px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 4px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #FCFCFE;
+}
+.maincontainer .matchescontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: flex-start;
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  width: 1000px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.maincontainer .matchescontainer .jobcontainer {
+  display: flex;
+  margin: 20px 0;
+  height: 247px;
+  min-width: 307px;
+  box-sizing: border-box;
+  background-color: #E3EBFD;
+}
+.maincontainer .matchescontainer .jobcontainer .topbackground {
+  display: flex;
+  background-color: #4C6AB6;
+  width: 100%;
+  height: 83px;
+  box-sizing: border-box;
 }
