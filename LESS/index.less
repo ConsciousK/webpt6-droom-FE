@@ -18,6 +18,15 @@ body {
   font-family: 'Roboto';
   max-width: 1440px;
   margin: auto;
+
+  @media @mobile {
+	  width: 100%;
+  }
+  .hide-mobile {
+	  @media @mobile {
+		  display: none;
+	  }
+  }
 }
 
 .no-click-img {
@@ -31,12 +40,22 @@ body {
 .topContainer {
 	.flex(@dir: row);
 
+	@media @mobile {
+		.flex(@dir: column);
+		background-color: #6891f9;
+		padding: 20px 0;
+	}
+
 	.landingBlob {
 		.flex();
 		position: inherit;
 		left: 95px;
 		top: 0px;
 		z-index: -2;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 		
 	.landingTopIllustration {
@@ -46,6 +65,10 @@ body {
 		align-self: center;
 		right: 45px;
 		top: 30px;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 
 
@@ -57,6 +80,14 @@ body {
 		padding-top: 30px;
 		height: 72px;
 		margin-left: 50px;
+
+		@media @mobile {
+			position: inherit;
+			width: 100%;
+			padding-top: 0px;
+			height: auto;
+			.flex(@dir: column);
+		}
 
 		.header {
 			.flex(flex-start);
@@ -71,6 +102,28 @@ body {
 		.navcontainer {
 			.flex(space-between, center);
 			width: 520px;
+
+			@media @mobile {
+				display: block;
+				width: 250px;
+				text-align: center;
+				position: fixed;
+				top: 0;
+				right: 0;
+				background-color: #E3EBFD;
+				height: 100vh;
+				padding-top: 40px;
+			}
+
+			#menu-button {
+				@media @mobile {
+					position: absolute;
+					font-size: 1.8em;
+					padding: 5px;
+					left: 0;
+					top: 5px;
+				}
+			}
 
 			.navlink {
 			box-sizing: border-box;
@@ -98,12 +151,24 @@ body {
 		}
 	}
 	.topLeft {
+		@media @mobile {
+			background-color: #6891f9;
+			padding: 20px 10px;
+		}
 		
 		.mainContainer {
 			position: absolute;
 			top: 200px;
 			margin-left: 50px;
 			width: 500px;
+			
+			@media @mobile {
+				width: 100%;
+				position: inherit;
+				top: none;
+				margin-left: 10px;
+				text-align: center;
+			}
 
 			h2 {
 				font-weight: 300;
@@ -111,6 +176,10 @@ body {
 				line-height: 70px;
 				letter-spacing: -0.5px;
 				color: #FCFCFE;
+
+				@media @mobile {
+					font-size: 50px;
+				}
 			}
 
 			h3 {
@@ -165,8 +234,17 @@ body {
 			padding: 40px;
 			.flex(space-around, flex-end);
 
+			@media @mobile {
+				.flex(space-around, center, column);
+				text-align: center;
+			}
+
 			.feature {
 				width: 260px; 
+
+				@media @mobile {
+					width: 100%;
+				}
 
 				h3 {
 					text-align: center;
@@ -180,6 +258,9 @@ body {
 					line-height: 1.35em;
 					letter-spacing: 0.5px;
 					color: rgba(38, 40, 47, 0.6);
+					@media @mobile {
+						padding-bottom: 25px;
+					}
 				}
 			}
 		}
@@ -188,10 +269,19 @@ body {
 		.flex(initial, center, column);
 		padding: 20px 155px;
 
+		@media @mobile {
+			padding: 20px;
+			text-align: center;
+		}
+
 		h2 {
 			font-size: 3em;
 			line-height: 1.25em;
 			color: #FCFCFE;
+			@media @mobile {
+				font-size: 2.7em;
+				padding-bottom: 10px;
+			}
 		}
 		p {
 			font-size: 1.5em;
@@ -213,6 +303,9 @@ body {
 			&:hover {
 				background-color: #FCD732;
 			}
+			@media @mobile {
+				margin-top: 20px;
+			}
 		}		
 	}
 	#howItWorksTitle {
@@ -226,8 +319,16 @@ body {
 		.flex(space-around, center);
 		padding: 30px 50px;
 
+		@media @mobile {
+			.flex(space-around, center, column);
+		}
+
 		.halfSection {
 			max-width: 500px;
+			
+			@media @mobile {
+				width: 100%;
+			}
 
 			p {
 				font-size: 1.25em;
