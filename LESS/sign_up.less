@@ -17,6 +17,9 @@ html {
         @media @mobile {
             margin: 15px 35px;
         }
+        @media @tablet {
+            margin: 15px 35px;
+        }
         .site-title {
             padding: 30px 0;
             font-family: 'Reem Kufi';
@@ -28,6 +31,9 @@ html {
         margin: 25px 80px;
 
         @media @mobile {
+            margin: 15px 35px;
+        }
+        @media @tablet {
             margin: 15px 35px;
         }
         .fPageTitle {
@@ -54,13 +60,16 @@ html {
             @media @mobile {
                 padding: 20px;
             }
-            .tabs {
+            @media @tablet {
+                padding: 20px;
+            }
+                .tabs {
                 .flex(center);
 
                 @media @mobile {
                     .flex(center, initial, column);
                 }
-    
+            
                 .tab {
                     color: rgba(57, 60, 70, 0.38);
                     font-size: 1.6em;
@@ -94,6 +103,9 @@ html {
                     @media @mobile {
                         .flex(space-between, initial, column);
                     }
+                    @media @tablet {
+                        .flex(space-between, initial, column);
+                    }
 
                     .formHalf {
 
@@ -106,6 +118,10 @@ html {
                                 .flex(space-between, center, column);
                                 width: 100%;
                                 padding: 0;
+                            }
+                            @media @tablet {
+                                // .flex(space-between, center, column);
+                                width: 100%;
                             }
 
                             input {
@@ -123,6 +139,12 @@ html {
 
                                 &:focus {
                                     background-color: #fff;
+                                }
+
+                                &.specialInput {
+                                    @media @tablet {
+                                        width: 28%;
+                                    }
                                 }
                             }
 
@@ -184,6 +206,9 @@ html {
 
                         &.secondHalf {
                             @media @mobile {
+                                .flex(center, center, column);
+                            }
+                            @media @tablet {
                                 .flex(center, center, column);
                             }
                         }
