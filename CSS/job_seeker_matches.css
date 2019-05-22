@@ -135,7 +135,6 @@ table {
   border-spacing: 0;
 }
 .maincontainer {
-  display: flex;
   margin: 0 auto;
   max-width: 1452px;
 }
@@ -402,16 +401,104 @@ table {
 }
 .maincontainer .matchescontainer .jobcontainer {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 20px 0;
-  height: 247px;
+  height: auto;
   min-width: 307px;
   box-sizing: border-box;
   background-color: #E3EBFD;
 }
 .maincontainer .matchescontainer .jobcontainer .topbackground {
   display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: #4C6AB6;
   width: 100%;
-  height: 83px;
+  height: 82px;
   box-sizing: border-box;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #1D2844;
+}
+.maincontainer .matchescontainer .jobcontainer .companyinfo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: rgba(38, 40, 47, 0.6);
+  text-align: center;
+}
+.maincontainer .matchescontainer .jobcontainer .jobdescription {
+  display: flex;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #1D2844;
+  text-align: center;
+}
+.maincontainer .matchescontainer .jobcontainer .buttoncontainer {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.maincontainer .matchescontainer .jobcontainer .buttoncontainer .apply {
+  display: flex;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  width: 77px;
+  height: 25px;
+  color: white;
+  justify-content: center;
+  background-color: #E5C01B;
+  border-radius: 5px;
+  border: 1px solid #E5C01B;
+  cursor: pointer;
+}
+.maincontainer .matchescontainer .jobcontainer .buttoncontainer .viewmore {
+  display: flex;
+  color: black;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  width: 77px;
+  height: 25px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #E5C01B;
+  cursor: pointer;
 }
