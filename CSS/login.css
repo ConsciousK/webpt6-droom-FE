@@ -136,12 +136,12 @@ table {
 }
 .maincontainer {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
 @media (max-width: 500px) {
   .maincontainer {
-    width: 500px;
+    width: 499px;
     margin: 0 auto;
   }
 }
