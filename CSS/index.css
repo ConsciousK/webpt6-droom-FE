@@ -436,7 +436,7 @@ body {
 }
 @media (max-width: 500px) {
   .contentContainer .getStarted {
-    padding: 20px;
+    padding: 20px 0px;
     text-align: center;
   }
 }
@@ -497,6 +497,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    padding: 30px 10px;
   }
 }
 .contentContainer .howItWorks .halfSection {
