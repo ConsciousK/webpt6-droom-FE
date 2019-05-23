@@ -343,6 +343,11 @@ body {
     padding-top: 40px;
   }
 }
+@media (max-width: 999px) {
+  .topContainer .headerContainer .navcontainer {
+    width: 100%;
+  }
+}
 .topContainer .headerContainer .navcontainer .navlink {
   box-sizing: border-box;
   display: flex;
@@ -399,7 +404,7 @@ body {
     width: 100%;
     position: inherit;
     top: none;
-    margin-left: 10px;
+    margin-left: 0;
     text-align: center;
   }
 }
@@ -408,7 +413,7 @@ body {
     width: 100%;
     position: inherit;
     top: none;
-    margin-left: 10px;
+    margin-left: 0;
     text-align: center;
   }
 }
