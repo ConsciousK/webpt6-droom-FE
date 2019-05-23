@@ -4,128 +4,148 @@
 @mobile:~"(max-width: 500px)";
 
 .maincontainer {
-	margin:0 auto;
-	max-width: 1452px;
+	display: flex;
+	width: 100%;
+	height: 100%;
 
 	@media @mobile {
-		width: 500px;
 		margin:0 auto;
 	}
 
 	.matchesheader {
 		display: flex;
-		position: absolute;
-		width: 1200px;
+		width: 100%;
 		height: 103px;
-		left: 309px;
-		top: 0px;
+		justify-content: center;
 		background: #6891F9;
-
-		.matchestitle {			
-			position: absolute;
-			width: 134px;
+		@media @mobile {
+			flex-direction: column;
+			width: 100%;
+			height: auto;
+			margin: 0 auto;	
+		}
+		.matchescontent {
+			display: flex;
+			justify-content: space-around;
+			align-self: center;
 			height: 40px;
-			margin-left: 25px;
-			top: 35px;
-			font-family: 'Roboto';
-			font-style: normal;
-			font-weight: normal;
-			font-size: 34px;
-			line-height: 40px;
-			letter-spacing: 0.25px;
-			color: #FCFCFE;
-		}
+			width: 75%;
+			@media @mobile {
+				flex-direction: column;
+				margin: 0;	
+				height: auto;
+			}
+			.matchestitle {			
+				display: flex;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: normal;
+				font-size: 34px;
+				line-height: 40px;
+				letter-spacing: 0.25px;
+				color: #FCFCFE;
+				height: 34px;
+				@media @mobile {
+					height: auto;
+					margin: 0 auto;	
+				}
+			}
+			.searchcontainer{
+				display: flex;
+				@media @mobile {
+					padding-bottom: 5px;
+					margin-top: 5px;
+				}
+				.magnify {
+					display: flex;
+					height: 36px;
+					left: 38%;
+					top: 35px;
+					background: #FFFFFF;
+					z-index: 1;
+					box-sizing: border-box;
+					border-top: 1px solid #4C6AB6;
+					border-left: 1px solid #4C6AB6;
+					border-bottom: 1px solid #4C6AB6;
+					border-radius: 6px;
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+					padding-left: 3px; 
+				}
+				.searchbar {
+					display: flex;
+					height: 36px;
+					width: 310px;
+					background: #FFFFFF;
+					border: 1px solid #4C6AB6;
+					box-sizing: border-box;
+					border-radius: 6px;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+			.bell {
+				display: flex;
+				width: 37px;
+				height: 33px;
+				@media @mobile {
+					position: absolute;
+					margin-top: 5px;
+					top: 0px;
+				}
+			}
 
-		.magnify {
-			display: flex;
-			position: absolute;
-			height: 36px;
-			left: 38%;
-			top: 35px;
-			background: #FFFFFF;
-			z-index: 1;
-			box-sizing: border-box;
-			border-top: 1px solid #4C6AB6;
-			border-left: 1px solid #4C6AB6;
-			border-bottom: 1px solid #4C6AB6;
-			border-radius: 6px;
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-			padding-left: 3px; 
-		}
-		.searchbar {
-			display: flex;
-			position: absolute;
-			height: 36px;
-			width: 310px;
-			left: 41%;
-			top: 35px;
-			background: #FFFFFF;
-			border: 1px solid #4C6AB6;
-			box-sizing: border-box;
-			border-radius: 6px;
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-		}
-		.bell {
-			display: flex;
-			position: absolute;
-			width: 37px;
-			height: 33px;
-			left: 900px;
-			top: 39px;
-		}
-
-		.cog {
-			display: flex;
-			position: absolute;
-			width: 35px;
-			height: 37px;
-			left: 960px;
-			top: 36px;
+			.cog {
+				display: flex;
+				width: 35px;
+				height: 37px;
+				@media @mobile {
+					position: absolute;
+					margin-top: 5px;
+					top: 0px;
+					right: 55px;
+				}
+			}
 		}
 	}
 
 	.sidebar {
-		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 		width: 314px;
-		height: 1024px;
-		left: 0px;
-		top: 0px;
+		height: 600px;
 		background: #6891F9;
+		padding-bottom: 150px;
+		@media @mobile {
+			display: none;	
+		}
 
 		.profilepicture {		
-			display: flex;				
-			position: absolute;
+			display: flex;
+			margin-top: 40px;			
 			width: 127px;
 			height: 127px;
-			left: 101px;
-			top: 62px;
 		}
 
 		.username {
-			position: absolute;
-			width: 152px;
-			height: 29px;
-			left: 85px;
-			top: 215px;
+			display: flex;
+			justify-content: center;
+			width: 100%;
 			font-family: "Roboto";
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
 			line-height: 28px;
-			display: flex;
-			align-items: center;
-			text-align: center;
 			color: #FCFCFE;
+			text-align: center;
 		}
 
 		.editprofile {
-			position: absolute;
+			display: flex;
 			width: 99px;
 			height: 31px;
-			left: 111px;
-			top: 259px;
 			border: 1px solid #FCFCFE;
 			color: white;
 			background: #6891F9;
@@ -136,8 +156,6 @@
 			font-weight: normal;
 			font-size: 14px;
 			line-height: 16px;
-			display: flex;
-			align-items: center;
 			padding-left: 15px;
 			&:hover {
 				border: 1px solid black;
@@ -145,145 +163,159 @@
 			}
 		}
 
-		.suitcaseicon {
+		.suitcase {
 			display: flex;
-			position: absolute;
-			width: 39px;
-			height: 34px;
-			left: 77px;
-			top: 331px;
+			width: 100%;
+			justify-content: flex-start;
+			align-content: center;
+
+			.suitcaseicon {
+				display: flex;
+				width: 39px;
+				padding-left: 20px;
+				padding-right: 25px;
+				align-content: center;
+				align-self: center;
+			}
+			.sidebartxt1 {
+				display: flex;
+				align-content: center;
+				align-self: center;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0.15px;
+				color: #FCFCFE;
+			}
 		}
 
-		.usericon {
+		.user {
 			display: flex;
-			position: absolute;
-			width: 28px;
-			height: 32px;
-			left: 79px;
-			top: 393px;
+			width: 100%;
+			justify-content: flex-start;
+			align-content: center;
+
+			.usericon {
+				display: flex;
+				width: 39px;
+				padding-left: 20px;
+				padding-right: 25px;
+				align-content: center;
+				align-self: center;
+			}
+			.sidebartxt2 {
+				display: flex;
+				align-content: center;
+				align-self: center;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0.15px;
+				color: #FCFCFE;
+			}
 		}
 
-		.hearticon {
+		.heart {
 			display: flex;
-			position: absolute;
-			width: 32px;
-			height: 28px;
-			left: 77px;
-			top: 462px;
+			width: 100%;
+			justify-content: flex-start;
+			align-content: center;
+
+			.hearticon {
+				display: flex;
+				width: 39px;
+				padding-left: 20px;
+				padding-right: 25px;
+				align-content: center;
+				align-self: center;
+			}
+			.sidebartxt3 {
+				display: flex;
+				align-content: center;
+				align-self: center;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0.15px;
+				color: #F0DC82;
+			}
+		}
+		.messages {
+			display: flex;
+			width: 100%;
+			justify-content: flex-start;
+			align-content: center;
+
+			.commenticon {
+				display: flex;
+				width: 39px;
+				padding-left: 20px;
+				padding-right: 25px;
+				align-content: center;
+				align-self: center;
+			}
+			.sidebartxt4 {
+				display: flex;
+				align-content: center;
+				align-self: center;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0.15px;
+				color: #FCFCFE;
+			}
 		}
 
-		.commenticon {
+		.goodbye {
 			display: flex;
-			position: absolute;
-			width: 32px;
-			height: 28px;
-			left: 77px;
-			top: 523px;
-		}
+			width: 100%;
+			justify-content: flex-start;
+			align-content: center;
 
-		.powericon {
-			display: flex;
-			position: absolute;
-			width: 31.49px;
-			height: 32px;
-			left: 87px;
-			top: 944px;
-		}
-
-		.sidebartxt1 {
-			display: flex;
-			position: absolute;
-			width: 112px;
-			height: 24px;
-			left: 139px;
-			top: 335px;
-			font-family: 'Roboto';
-			font-style: normal;
-			font-weight: 500;
-			font-size: 20px;
-			line-height: 23px;
-			letter-spacing: 0.15px;
-			color: #FCFCFE;
-		}
-		.sidebartxt2 {
-			display: flex;
-			position: absolute;
-			width: 60px;
-			height: 24px;
-			left: 135px;
-			top: 396px;
-			font-family: 'Roboto';
-			font-style: normal;
-			font-weight: 500;
-			font-size: 20px;
-			padding-left: 4px;
-			line-height: 23px;
-			letter-spacing: 0.15px;
-			color: #FCFCFE;
-		}
-
-		.sidebartxt3 {
-			display: flex;
-			position: absolute;
-			width: 79px;
-			height: 24px;
-			left: 135px;
-			top: 463px;
-			font-family: 'Roboto';
-			font-style: normal;
-			font-weight: 500;
-			font-size: 20px;
-			padding-left: 4px;
-			line-height: 23px;
-			letter-spacing: 0.15px;
-			color: #F0DC82;
-		}
-
-		.sidebartxt4 {
-			position: absolute;
-			width: 94px;
-			height: 24px;
-			left: 135px;
-			top: 524px;
-			font-family: 'Roboto';
-			font-style: normal;
-			font-weight: 500;
-			font-size: 20px;
-			padding-left: 4px;
-			line-height: 23px;
-			letter-spacing: 0.15px;
-			color: #FCFCFE;
-		}
-
-		.logout {
-			position: absolute;
-			width: 64px;
-			height: 24px;
-			left: 153px;
-			top: 948px;
-			font-family: 'Roboto';
-			font-style: normal;
-			font-weight: 500;
-			font-size: 20px;
-			padding-left: 4px;
-			line-height: 23px;
-			letter-spacing: 0.15px;
-			color: #FCFCFE;
+			.powericon {
+				display: flex;
+				width: 39px;
+				padding-left: 20px;
+				padding-right: 25px;
+				align-content: center;
+				align-self: center;
+			}
+			.logout {
+				display: flex;
+				align-content: center;
+				align-self: center;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0.15px;
+				color: #FCFCFE;
+			}
 		}
 	}
-
 	.matchescontainer {
 		display: flex;
 		justify-content: space-evenly;
 		align-content: space-evenly;
 		align-items: flex-start;
 		position: absolute;
-		top: 150px;
-		left: 450px;
-		width: 1000px;
+		top: 100px;
+		margin-left: 255px;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-
+		@media @mobile {
+			margin: 0 auto;	
+			top: 100px;
+		}
 		.jobcontainer {
 			display: flex;
 			flex-direction: column;
@@ -294,7 +326,9 @@
 			min-width: 307px;
 			box-sizing: border-box;
 			background-color: #E3EBFD;
-
+			@media @mobile {
+				width: 50%;	
+			}
 			.topbackground {
 				display: flex;
 				align-self: flex-start;
