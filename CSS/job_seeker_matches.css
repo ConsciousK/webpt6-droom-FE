@@ -141,7 +141,6 @@ table {
 }
 @media (max-width: 500px) {
   .maincontainer {
-    width: 500px;
     margin: 0 auto;
   }
 }
@@ -152,12 +151,27 @@ table {
   justify-content: center;
   background: #6891F9;
 }
+@media (max-width: 500px) {
+  .maincontainer .matchesheader {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 .maincontainer .matchesheader .matchescontent {
   display: flex;
   justify-content: space-around;
   align-self: center;
   height: 40px;
   width: 75%;
+}
+@media (max-width: 500px) {
+  .maincontainer .matchesheader .matchescontent {
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+  }
 }
 .maincontainer .matchesheader .matchescontent .matchestitle {
   display: flex;
@@ -170,8 +184,20 @@ table {
   color: #FCFCFE;
   height: 34px;
 }
+@media (max-width: 500px) {
+  .maincontainer .matchesheader .matchescontent .matchestitle {
+    height: auto;
+    margin: 0 auto;
+  }
+}
 .maincontainer .matchesheader .matchescontent .searchcontainer {
   display: flex;
+}
+@media (max-width: 500px) {
+  .maincontainer .matchesheader .matchescontent .searchcontainer {
+    padding-bottom: 5px;
+    margin-top: 5px;
+  }
 }
 .maincontainer .matchesheader .matchescontent .searchcontainer .magnify {
   display: flex;
@@ -205,10 +231,25 @@ table {
   width: 37px;
   height: 33px;
 }
+@media (max-width: 500px) {
+  .maincontainer .matchesheader .matchescontent .bell {
+    position: absolute;
+    margin-top: 5px;
+    top: 0px;
+  }
+}
 .maincontainer .matchesheader .matchescontent .cog {
   display: flex;
   width: 35px;
   height: 37px;
+}
+@media (max-width: 500px) {
+  .maincontainer .matchesheader .matchescontent .cog {
+    position: absolute;
+    margin-top: 5px;
+    top: 0px;
+    right: 55px;
+  }
 }
 .maincontainer .sidebar {
   display: flex;
@@ -219,6 +260,11 @@ table {
   height: 600px;
   background: #6891F9;
   padding-bottom: 150px;
+}
+@media (max-width: 500px) {
+  .maincontainer .sidebar {
+    display: none;
+  }
 }
 .maincontainer .sidebar .profilepicture {
   display: flex;
@@ -399,6 +445,12 @@ table {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  .maincontainer .matchescontainer {
+    margin: 0 auto;
+    top: 100px;
+  }
+}
 .maincontainer .matchescontainer .jobcontainer {
   display: flex;
   flex-direction: column;
@@ -409,6 +461,11 @@ table {
   min-width: 307px;
   box-sizing: border-box;
   background-color: #E3EBFD;
+}
+@media (max-width: 500px) {
+  .maincontainer .matchescontainer .jobcontainer {
+    width: 50%;
+  }
 }
 .maincontainer .matchescontainer .jobcontainer .topbackground {
   display: flex;

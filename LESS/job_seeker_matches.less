@@ -9,7 +9,6 @@
 	height: 100%;
 
 	@media @mobile {
-		width: 500px;
 		margin:0 auto;
 	}
 
@@ -19,12 +18,23 @@
 		height: 103px;
 		justify-content: center;
 		background: #6891F9;
+		@media @mobile {
+			flex-direction: column;
+			width: 100%;
+			height: auto;
+			margin: 0 auto;	
+		}
 		.matchescontent {
 			display: flex;
 			justify-content: space-around;
 			align-self: center;
 			height: 40px;
 			width: 75%;
+			@media @mobile {
+				flex-direction: column;
+				margin: 0;	
+				height: auto;
+			}
 			.matchestitle {			
 				display: flex;
 				font-family: 'Roboto';
@@ -35,9 +45,17 @@
 				letter-spacing: 0.25px;
 				color: #FCFCFE;
 				height: 34px;
+				@media @mobile {
+					height: auto;
+					margin: 0 auto;	
+				}
 			}
 			.searchcontainer{
 				display: flex;
+				@media @mobile {
+					padding-bottom: 5px;
+					margin-top: 5px;
+				}
 				.magnify {
 					display: flex;
 					height: 36px;
@@ -70,12 +88,23 @@
 				display: flex;
 				width: 37px;
 				height: 33px;
+				@media @mobile {
+					position: absolute;
+					margin-top: 5px;
+					top: 0px;
+				}
 			}
 
 			.cog {
 				display: flex;
 				width: 35px;
 				height: 37px;
+				@media @mobile {
+					position: absolute;
+					margin-top: 5px;
+					top: 0px;
+					right: 55px;
+				}
 			}
 		}
 	}
@@ -89,6 +118,9 @@
 		height: 600px;
 		background: #6891F9;
 		padding-bottom: 150px;
+		@media @mobile {
+			display: none;	
+		}
 
 		.profilepicture {		
 			display: flex;
@@ -280,7 +312,10 @@
 		margin-left: 255px;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-
+		@media @mobile {
+			margin: 0 auto;	
+			top: 100px;
+		}
 		.jobcontainer {
 			display: flex;
 			flex-direction: column;
@@ -291,7 +326,9 @@
 			min-width: 307px;
 			box-sizing: border-box;
 			background-color: #E3EBFD;
-
+			@media @mobile {
+				width: 50%;	
+			}
 			.topbackground {
 				display: flex;
 				align-self: flex-start;
