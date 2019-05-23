@@ -24,7 +24,10 @@ body {
   }
   .hide-mobile {
 	  @media @mobile {
-		  display: none;
+	  	display: none;
+	  }
+	  @media @tablet {
+		display: none;
 	  }
   }
 }
@@ -45,6 +48,11 @@ body {
 		background-color: #6891f9;
 		padding: 20px 0;
 	}
+	@media @tablet {
+		.flex(@dir: column);
+		background-color: #6891f9;
+		padding: 20px 0;
+	}
 
 	.landingBlob {
 		.flex();
@@ -54,6 +62,9 @@ body {
 		z-index: -2;
 
 		@media @mobile {
+			display: none;
+		}
+		@media @tablet {
 			display: none;
 		}
 	}
@@ -69,6 +80,9 @@ body {
 		@media @mobile {
 			display: none;
 		}
+		@media @tablet {
+			display: none;
+		}
 	}
 
 
@@ -82,6 +96,27 @@ body {
 		margin-left: 50px;
 
 		@media @mobile {
+			position: inherit;
+			width: 100%;
+			padding-top: 0px;
+			height: auto;
+			.flex(@dir: column);
+			margin: 0;
+			padding-left: 30px;
+		}
+		@media @midDesktop {
+			width: 100%;
+			padding-left: 50px;
+			margin-left: 0;
+			padding-right: 10px;
+		}
+		@media @smallDesktop {
+			width: 100%;
+			padding-left: 50px;
+			margin-left: 0;
+			padding-right: 10px;
+		}
+		@media @tablet {
 			position: inherit;
 			width: 100%;
 			padding-top: 0px;
@@ -151,6 +186,12 @@ body {
 					box-sizing: border-box;
 					border-radius: 20px;
 
+					@media @tablet {
+						border: 3px solid #fff;
+					}
+				}
+				@media @tablet {
+					color: #fff;
 				}
 			}
 		}
@@ -174,6 +215,13 @@ body {
 				margin-left: 10px;
 				text-align: center;
 			}
+			@media @tablet {
+				width: 100%;
+				position: inherit;
+				top: none;
+				margin-left: 10px;
+				text-align: center;
+			}
 
 			h2 {
 				font-weight: 300;
@@ -185,7 +233,10 @@ body {
 				@media @mobile {
 					font-size: 50px;
 				}
-			}
+				@media @tablet {
+					padding-top: 40px;
+				}
+		}
 
 			h3 {
 				font-size: 30px;
@@ -243,11 +294,18 @@ body {
 				.flex(space-around, center, column);
 				text-align: center;
 			}
+			@media @tablet {
+				.flex(space-around, center, column);
+				text-align: center;
+			}
 
 			.feature {
 				width: 260px; 
 
 				@media @mobile {
+					width: 100%;
+				}
+				@media @tablet {
 					width: 100%;
 				}
 
@@ -266,6 +324,9 @@ body {
 					@media @mobile {
 						padding-bottom: 25px;
 					}
+					@media @tablet {
+						padding-bottom: 25px;
+					}
 				}
 			}
 		}
@@ -275,6 +336,10 @@ body {
 		padding: 20px 155px;
 
 		@media @mobile {
+			padding: 20px 0px;
+			text-align: center;
+		}
+		@media @tablet {
 			padding: 20px 0px;
 			text-align: center;
 		}
@@ -311,6 +376,9 @@ body {
 			@media @mobile {
 				margin-top: 20px;
 			}
+			@media @tablet {
+				margin-top: 20px;
+			}
 		}		
 	}
 	#howItWorksTitle {
@@ -328,11 +396,18 @@ body {
 			.flex(space-around, center, column);
 			padding: 30px 10px;
 		}
+		@media @tablet {
+			.flex(space-around, center, column);
+			padding: 30px 10px;
+		}
 
 		.halfSection {
 			max-width: 500px;
 			
 			@media @mobile {
+				width: 100%;
+			}
+			@media @tablet {
 				width: 100%;
 			}
 
