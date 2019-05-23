@@ -163,6 +163,11 @@ body {
     display: none;
   }
 }
+@media (max-width: 999px) {
+  body .hide-mobile {
+    display: none;
+  }
+}
 .no-click-img {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -177,6 +182,16 @@ body {
   flex-direction: row;
 }
 @media (max-width: 500px) {
+  .topContainer {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    background-color: #6891f9;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 999px) {
   .topContainer {
     display: flex;
     justify-content: initial;
@@ -201,6 +216,11 @@ body {
     display: none;
   }
 }
+@media (max-width: 999px) {
+  .topContainer .landingBlob {
+    display: none;
+  }
+}
 .topContainer .landingTopIllustration {
   display: flex;
   justify-content: initial;
@@ -213,6 +233,11 @@ body {
   top: 30px;
 }
 @media (max-width: 500px) {
+  .topContainer .landingTopIllustration {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
   .topContainer .landingTopIllustration {
     display: none;
   }
@@ -230,6 +255,36 @@ body {
   margin-left: 50px;
 }
 @media (max-width: 500px) {
+  .topContainer .headerContainer {
+    position: inherit;
+    width: 100%;
+    padding-top: 0px;
+    height: auto;
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1439px) {
+  .topContainer .headerContainer {
+    width: 100%;
+    padding-left: 50px;
+    margin-left: 0;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .topContainer .headerContainer {
+    width: 100%;
+    padding-left: 50px;
+    margin-left: 0;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 999px) {
   .topContainer .headerContainer {
     position: inherit;
     width: 100%;
@@ -312,6 +367,16 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
 }
+@media (max-width: 999px) {
+  .topContainer .headerContainer .navcontainer .navlink:hover {
+    border: 3px solid #fff;
+  }
+}
+@media (max-width: 999px) {
+  .topContainer .headerContainer .navcontainer .navlink {
+    color: #fff;
+  }
+}
 @media (max-width: 500px) {
   .topContainer .topLeft {
     background-color: #6891f9;
@@ -333,6 +398,15 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 999px) {
+  .topContainer .topLeft .mainContainer {
+    width: 100%;
+    position: inherit;
+    top: none;
+    margin-left: 10px;
+    text-align: center;
+  }
+}
 .topContainer .topLeft .mainContainer h2 {
   font-weight: 300;
   font-size: 60px;
@@ -343,6 +417,11 @@ body {
 @media (max-width: 500px) {
   .topContainer .topLeft .mainContainer h2 {
     font-size: 50px;
+  }
+}
+@media (max-width: 999px) {
+  .topContainer .topLeft .mainContainer h2 {
+    padding-top: 40px;
   }
 }
 .topContainer .topLeft .mainContainer h3 {
@@ -401,10 +480,24 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 999px) {
+  .contentContainer .featuresContainer .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .contentContainer .featuresContainer .features .feature {
   width: 260px;
 }
 @media (max-width: 500px) {
+  .contentContainer .featuresContainer .features .feature {
+    width: 100%;
+  }
+}
+@media (max-width: 999px) {
   .contentContainer .featuresContainer .features .feature {
     width: 100%;
   }
@@ -427,6 +520,11 @@ body {
     padding-bottom: 25px;
   }
 }
+@media (max-width: 999px) {
+  .contentContainer .featuresContainer .features .feature p {
+    padding-bottom: 25px;
+  }
+}
 .contentContainer .getStarted {
   display: flex;
   justify-content: initial;
@@ -435,6 +533,12 @@ body {
   padding: 20px 155px;
 }
 @media (max-width: 500px) {
+  .contentContainer .getStarted {
+    padding: 20px 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 999px) {
   .contentContainer .getStarted {
     padding: 20px 0px;
     text-align: center;
@@ -477,6 +581,11 @@ body {
     margin-top: 20px;
   }
 }
+@media (max-width: 999px) {
+  .contentContainer .getStarted a.main-btn {
+    margin-top: 20px;
+  }
+}
 .contentContainer #howItWorksTitle {
   font-size: 2.4em;
   line-height: 2.8em;
@@ -500,10 +609,24 @@ body {
     padding: 30px 10px;
   }
 }
+@media (max-width: 999px) {
+  .contentContainer .howItWorks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+}
 .contentContainer .howItWorks .halfSection {
   max-width: 500px;
 }
 @media (max-width: 500px) {
+  .contentContainer .howItWorks .halfSection {
+    width: 100%;
+  }
+}
+@media (max-width: 999px) {
   .contentContainer .howItWorks .halfSection {
     width: 100%;
   }
