@@ -137,11 +137,10 @@ table {
 .maincontainer {
   display: flex;
   margin: 0 auto;
-  max-width: 1440px;
 }
 @media (max-width: 500px) {
   .maincontainer {
-    width: 499px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -165,6 +164,7 @@ table {
 }
 @media (max-width: 500px) {
   .maincontainer .loginillustration {
+    width: 100%;
     display: none;
   }
 }
@@ -180,9 +180,10 @@ table {
 }
 @media (max-width: 500px) {
   .maincontainer .logincontainer {
-    width: auto;
+    width: 75%;
+    height: auto;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 130px;
   }
 }
 .maincontainer .logincontainer h2 {
@@ -196,15 +197,39 @@ table {
   color: rgba(19, 20, 24, 0.87);
   height: 60px;
   margin: 10px 0;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .maincontainer .logincontainer h2 {
+    width: 75%;
+    font-size: 20px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 20px;
+  }
 }
 .maincontainer .logincontainer .linkedinlogin {
   display: flex;
   height: 70px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .maincontainer .logincontainer .linkedinlogin {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 .maincontainer .logincontainer .ordivider {
   display: flex;
   margin: 15px 0;
+}
+@media (max-width: 500px) {
+  .maincontainer .logincontainer .ordivider {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 .maincontainer .logincontainer .email {
   display: flex;
@@ -223,6 +248,13 @@ table {
   margin-left: 15px;
   border-bottom: 1px solid grey;
 }
+@media (max-width: 500px) {
+  .maincontainer .logincontainer .email {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 .maincontainer .logincontainer .password {
   display: flex;
   width: 368px;
@@ -240,6 +272,13 @@ table {
   margin-left: 15px;
   border-bottom: 1px solid grey;
 }
+@media (max-width: 500px) {
+  .maincontainer .logincontainer .password {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 .maincontainer .logincontainer .savepw {
   display: flex;
   width: 368px;
@@ -252,6 +291,13 @@ table {
   color: rgba(19, 20, 24, 0.87);
   margin: 2px 0;
   margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .maincontainer .logincontainer .savepw {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 .maincontainer .logincontainer .savepw .savepwdown {
   padding-top: 3px;
@@ -280,18 +326,17 @@ table {
 }
 .maincontainer .headercontainer {
   display: flex;
-  width: 1259px;
+  width: 100%;
   justify-content: space-between;
   z-index: 0;
   position: absolute;
   padding-top: 30px;
   height: 72px;
-  margin-left: 50px;
 }
 @media (max-width: 500px) {
   .maincontainer .headercontainer {
     flex-direction: column;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
@@ -305,6 +350,7 @@ table {
   font-size: 48px;
   line-height: 72px;
   color: whitesmoke;
+  padding-left: 50px;
 }
 @media (max-width: 500px) {
   .maincontainer .headercontainer .header {
@@ -322,7 +368,7 @@ table {
 }
 @media (max-width: 500px) {
   .maincontainer .headercontainer .navcontainer {
-    width: 500px;
+    width: 100%;
     justify-content: space-evenly;
     font-size: 32px;
     line-height: 65px;
