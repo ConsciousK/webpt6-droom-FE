@@ -378,6 +378,11 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .topContainer .headerContainer .navcontainer .navlink {
+    color: rgba(19, 20, 24, 0.87);
+  }
+}
+@media (max-width: 500px) {
   .topContainer .topLeft {
     background-color: #6891f9;
     padding: 20px 10px;
