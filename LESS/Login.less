@@ -6,10 +6,10 @@
 .maincontainer {
 	display: flex;
 	margin:0 auto;
-	max-width: 1440px;
+
 
 	@media @mobile {
-		width: 499px;
+		width: 100%;
 		margin:0 auto;
 	}
 
@@ -32,6 +32,7 @@
 		align-self: center;
 
 		@media @mobile {
+			width: 100%;
 			display: none;
 		}
 	}
@@ -47,9 +48,10 @@
 		align-content: space-evenly;
 
 		@media @mobile {
-			width: auto;
+			width: 75%;
+			height: auto;
 			margin: 0 auto;
-			margin-top: 100px;
+			margin-top: 130px;
 		}
 
 		h2 {
@@ -63,17 +65,36 @@
 			color: rgba(19, 20, 24, 0.87);
 			height: 60px;
 			margin: 10px 0;
+			justify-content: center;
+			@media @mobile {
+				width: 75%;
+				font-size: 20px;
+				height: auto;
+				margin: 0 auto;
+				line-height: 20px;
+
+			}
 		}
 
 		.linkedinlogin {
 			display: flex;
 			height: 70px;
 			margin: 0 auto;
+			@media @mobile {
+				width: 75%;
+				height: auto;
+				margin: 0 auto;
+			}
 		}
 
 		.ordivider {
 			display: flex;
 			margin: 15px 0;
+			@media @mobile {
+				width: 75%;
+				height: auto;
+				margin: 0 auto;
+			}
 		}
 
 		.email {
@@ -92,6 +113,11 @@
 			margin: 15px 0 5px;
 			margin-left: 15px;
 			border-bottom: 1px solid grey;
+			@media @mobile {
+				width: 75%;
+				height: auto;
+				margin: 0 auto;
+			}
 		}
 
 		.password {
@@ -110,6 +136,11 @@
 			margin: 10px 0 2px;
 			margin-left: 15px;
 			border-bottom: 1px solid grey;
+			@media @mobile {
+				width: 75%;
+				height: auto;
+				margin: 0 auto;
+			}
 		}
 
 		.savepw {
@@ -124,7 +155,11 @@
 			color: rgba(19, 20, 24, 0.87);
 			margin: 2px 0;
 			margin-left: 10px;
-		
+			@media @mobile {
+				width: 75%;
+				height: auto;
+				margin: 0 auto;
+			}
 			.savepwdown{
 				padding-top: 3px;
 			}
@@ -157,17 +192,16 @@
 
 	.headercontainer {
 		display: flex;
-		width: 1259px;
+		width: 100%;
 		justify-content: space-between;
 		z-index: 0;
 		position: absolute;
 		padding-top: 30px;
 		height: 72px;
-		margin-left: 50px;
 
 		@media @mobile {
 			flex-direction: column;
-			width: auto;
+			width: 100%;
 			margin: 0 auto;
 			padding: 0;
 		}
@@ -181,6 +215,7 @@
 			font-size: 48px;
 			line-height: 72px;
 			color: whitesmoke;
+			padding-left: 50px;
 
 			@media @mobile {
 				justify-content: center;
@@ -197,7 +232,7 @@
 			align-items: center;
 
 			@media @mobile {
-				width: 500px;
+				width: 100%;
 				justify-content: space-evenly;
 				font-size: 32px;
 				line-height: 65px;

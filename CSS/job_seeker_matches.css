@@ -309,6 +309,7 @@ table {
   width: 100%;
   justify-content: flex-start;
   align-content: center;
+  cursor: pointer;
 }
 .maincontainer .sidebar .suitcase .suitcaseicon {
   display: flex;
@@ -361,6 +362,7 @@ table {
   width: 100%;
   justify-content: flex-start;
   align-content: center;
+  cursor: pointer;
 }
 .maincontainer .sidebar .heart .hearticon {
   display: flex;
@@ -441,7 +443,7 @@ table {
   align-items: flex-start;
   position: absolute;
   top: 100px;
-  margin-left: 255px;
+  margin-left: 300px;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
@@ -456,7 +458,7 @@ table {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 20px 0;
+  margin: 20px 10px;
   height: auto;
   min-width: 307px;
   box-sizing: border-box;
