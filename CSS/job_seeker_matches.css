@@ -309,6 +309,7 @@ table {
   width: 100%;
   justify-content: flex-start;
   align-content: center;
+  cursor: pointer;
 }
 .maincontainer .sidebar .suitcase .suitcaseicon {
   display: flex;
@@ -361,6 +362,7 @@ table {
   width: 100%;
   justify-content: flex-start;
   align-content: center;
+  cursor: pointer;
 }
 .maincontainer .sidebar .heart .hearticon {
   display: flex;
