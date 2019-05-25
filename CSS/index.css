@@ -330,6 +330,11 @@ body {
   flex-direction: row;
   width: 520px;
 }
+@media (max-width: 999px) {
+  .topContainer .headerContainer .navcontainer {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .topContainer .headerContainer .navcontainer {
     display: block;
@@ -341,11 +346,6 @@ body {
     background-color: #E3EBFD;
     height: 100vh;
     padding-top: 40px;
-  }
-}
-@media (max-width: 999px) {
-  .topContainer .headerContainer .navcontainer {
-    width: 100%;
   }
 }
 .topContainer .headerContainer .navcontainer .navlink {
