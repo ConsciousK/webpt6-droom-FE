@@ -153,6 +153,10 @@ body {
 			.flex(space-between, center);
 			width: 520px;
 
+			@media @tablet {
+				width: 100%;
+			}
+			
 			@media @mobile {
 				display: block;
 				width: 250px;
@@ -163,10 +167,6 @@ body {
 				background-color: #E3EBFD;
 				height: 100vh;
 				padding-top: 40px;
-			}
-
-			@media @tablet {
-				width: 100%;
 			}
 
 			.navlink {
